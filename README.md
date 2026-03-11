@@ -1,3 +1,10 @@
+# structural-scan
+
+Structural diagnostics for software systems.
+
+Detect structural signals in codebases by analyzing dependency relationships, module structure, and propagation risks.
+
+
 # -structural-analyzer
  It gives developers an immediate answer to:  “Where is my system structurally fragile?”
 structural-scan
@@ -216,3 +223,27 @@ The goal is to explore a simple idea:
 Software systems have structure, and that structure can be analyzed.
 
 If the idea proves useful, the tooling will evolve.
+
+# Related Tools
+
+This project is part of a small family of tools exploring structural diagnostics for software systems.
+
+structural-scan — detects structural signals in codebases
+
+test-audit — analyzes the structural health of test suites
+
+cascade-map — visualizes dependency cascade paths
+
+Each tool examines a different structural layer of a system:
+
+codebase structure  →  structural-scan
+test architecture   →  test-audit
+dependency geometry →  cascade-map
+
+Together they explore a simple idea:
+
+software systems have structure, and that structure can be analyzed.
+
+If you want to make the connection even clearer across repos, you can optionally add one closing line like this:
+
+These tools are intentionally small and independent, but they share a common goal: making structural properties of software systems visible.
